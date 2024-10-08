@@ -55,6 +55,10 @@ Next, activate your new virtual environment (you have to do it every time you op
 conda activate LLMs
 ```
 
+__2 notes from CT:__
+_ __You may be prompted to run `conda init` first, and that adds information to your `~/.bash_profile`.  In my case, I wanted to move that to my `~/.bashrc` (since my `.bash_profile` merely sourced the `.bashrc`)__
+_ __Second, up to now, it was necessary to call `conda` in its full path (`~/miniforge3/bin/conda`), but after the `init` and reloading the environment, you should use the one in your path (continuing to use the FQN didn't work for me).__
+
 <img src="https://sebastianraschka.com/images/LLMs-from-scratch-images/setup/01_optional-python-setup-preferences/activate-env.png" alt="activate-env" width="600px">
 
 <br>
